@@ -1,3 +1,27 @@
 <html>
-<script type="text/javascript" src="SpotifyAM.js"></script>
+<body>
+    <table>
+        <tr>
+            <td>ClientID:&nbsp;</td>
+            <td><input type="text" id="client_id"/></td>
+        </tr>
+        <tr>
+            <td>ClientSecret:&nbsp;</td>
+            <td><input type="text" id="client_secret"/></td>
+        </tr>
+        <tr>
+            <td>ISRC / Playlist ID:&nbsp;</td>
+            <td><input type="text" id="lookup_id"></td>
+        </tr>
+    </table>
+    <form action="">
+        <input type="radio" name="type" value="playlist" id="playlist" checked="checked"><label for="playlist">Playlist</label><span>&nbsp;</span>
+        <input type="radio" name="type" value="isrc" id="isrc"><label for="isrc">ISRC</label>
+    </form>
+    <input type="button" id="submit" value="Submit">
+    <p id="output">Output currently in console log</p>
+</body>
+<script type="text/javascript" src="scripts/SpotifyPlaylist.js"></script>
+<script type="text/javascript" src="scripts/SpotifyAM.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 </html>

@@ -33,9 +33,15 @@ var SpotifyAM = (client_id, client_secret, isrc) => {
 
     function shareFromSongInfoJson(searchResult) {
         if (!!searchResult) {
-            var shareUrl = searchResult.tracks.items[0].external_urls.spotify;
-            console.log(shareUrl);
+            try {
+                var shareUrl = searchResult.tracks.items[0].external_urls.spotify;
+                console.log(shareUrl);
+            }
+            catch (e) {
+                console.error(e);
+                console.log("No info!");
+            }
         }
     }
 }
-SpotifyAM("[Client_ID]", "[Client_Secret]", "[ISRC]");
+//SpotifyAM("[Client_ID]", "[Client_Secret]", "[ISRC]");

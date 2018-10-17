@@ -1,9 +1,13 @@
-# SpotifyAM
+# Spotify Tools
 
-Uncompleted due to lack of MusicKit access
+Some gadgets for performing Spotify queries.
 
-## Instructions  
-1. Replace [Client_ID], [Client_Secret] with application credentials created on Spotify's developer website  
-2. Replace [ISRC] with the ISRC code of target music, e.g., "JPB601402248" ("風に薫る夏の記憶" by AAA)
-3. Enable browser's local cross-origin http requests
-4. Open index.html, returning url will be displayed in the console
+## Instructions
+1. Enable browser's local cross-origin http requests
+2. Open index.html, enter and submit info as prompted, returning url will be displayed in the console
+
+### SpotifyAM
+Currently capable of retrieving music url by its ISRC code from Spotify
+
+### SpotifyPlaylist
+Retrieving song info ```{name, [artists], music_url)}``` for a given playlist ID
